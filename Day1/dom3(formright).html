@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" id="nm" placeholder="Enter Name">
+
+        <input type="text" name="" id="em" placeholder="Enter Email">
+
+        <input type="submit" name="" id="">
+    </form>
+</body>
+
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit", getData);
+
+    function getData(e) {
+        e.preventDefault();
+        let name = document.querySelector("#nm").value
+        let email = document.querySelector("#em").value
+
+        console.log(name, email)
+    }
+</script>
+
+<!--
+1. Wrap all input tag inside form tag 
+2. use input type = submit for creating button
+3. always add event on form
+4. always use submit event in case of form
+5. use e.preventDefault
+-->

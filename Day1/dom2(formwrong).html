@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="nm" placeholder="Enter Name">
+
+    <input type="text" name="" id="em" placeholder="Enter Email">
+
+    <button>submit</button>
+</body>
+</html>
+
+<script>
+    document.querySelector("button").addEventListener("click",getData)
+
+    function getData(){
+        let name = document.querySelector("#nm").value
+        let email = document.querySelector("#em").value
+
+        console.log(name,email)
+    }
+</script>
