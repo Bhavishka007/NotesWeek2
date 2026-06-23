@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div class="cont">
+        <img src="" alt="">
+    </div> -->
+</body>
+</html>
+
+<script>
+    const el = document.createElement("div");
+    console.log(el)    
+
+    el.setAttribute("class","cont");
+
+    const image = document.createElement("img");
+
+    image.setAttribute("scr", "https://wallpapers.com/images/hd/harry-potter-pictures-bhgxz4x9hk15qz9q.jpg");
+
+    console.log(image);
+    el.append(image);
+
+     document.querySelector("body").append(el)
+    
+</script>
